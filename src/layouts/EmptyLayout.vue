@@ -5,8 +5,19 @@
 </template>
 
 <script>
+
     export default {
-        name: "EmptyLayout"
+        name: "EmptyLayout",
+        computed: {
+            error() {
+                return this.$store.getters.error
+            }
+        },
+        watch: {
+            error(fbError) {
+                this.$error(fbError.message);
+            }
+        }
     }
 </script>
 
