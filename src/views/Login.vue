@@ -54,6 +54,11 @@
 
     export default {
         name: "Login",
+        metaInfo() {
+            return {
+                title: this.$title('Login'),
+            }
+        },
         data() {
             return {
                 email: '',

@@ -86,6 +86,11 @@
 
     export default {
         name: "Record",
+        metaInfo() {
+            return {
+                title: this.$title('New_record'),
+            }
+        },
         data() {
             return {
                 select: null,

@@ -1,0 +1,18 @@
+{
+  "ProfileTitle": "Профиль",
+  "Name": "Имя",
+  "Enter_name_message": "Введите ваше имя",
+  "Name_must_contain": "Имя должно содержать более",
+  "Symbols": "символов",
+  "Now_it_has": "Сейчас",
+  "Update": "Обновить",
+  "Menu_Bill": "Счет",
+  "Menu_History": "История",
+  "Menu_Planning": "Планирование",
+  "Menu_New_record": "Новая запись",
+  "Menu_Categories": "Категории",
+  "Record_page": "Страница записи",
+  "Login": "Логин",
+  "New_record": "Новая запись",
+  "Register": "Регистрация"
+}

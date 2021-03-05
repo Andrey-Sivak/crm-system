@@ -32,6 +32,11 @@ import messages from "@/utils/messages";
 
 export default {
   name: 'Home',
+  metaInfo() {
+      return {
+          title: this.$title('Menu_Bill'),
+      }
+  },
   data() {
       return {
           loading: true,

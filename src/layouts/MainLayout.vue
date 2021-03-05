@@ -6,7 +6,7 @@
 
       <Navbar @showHideNavbar="navbarIsOpen = !navbarIsOpen"/>
 
-      <Sidebar v-model="navbarIsOpen" />
+      <Sidebar v-model="navbarIsOpen" :key="locale"/>
 
       <main class="app-content" :class="{full: !navbarIsOpen}">
         <div class="app-page">
@@ -17,7 +17,8 @@
       <div class="fixed-action-btn">
         <router-link
                 class="btn-floating btn-large blue"
-                to="./record">
+                to="./record"
+                v-tooltip="'Создать новую запись'">
           <i class="large material-icons">add</i>
         </router-link>
       </div>
@@ -50,6 +51,19 @@
 
             this.loading = false;
         },
+        computed: {
+            error() {
+                return this.$store.getters.error
+            },
+            locale() {
+                return this.$store.getters.info.locale
+            }
+        },
+        watch: {
+            error(fbError) {
+                this.$error(fbError.message);
+            }
+        }
     }
 </script>
 

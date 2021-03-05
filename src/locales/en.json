@@ -1,0 +1,18 @@
+{
+  "ProfileTitle": "Profile",
+  "Name": "Name",
+  "Enter_name_message": "Enter your name",
+  "Name_must_contain": "Name must contain more then",
+  "Symbols": "symbols",
+  "Now_it_has": "Now it has",
+  "Update": "Update",
+  "Menu_Bill": "Bill",
+  "Menu_History": "History",
+  "Menu_Planning": "Planning",
+  "Menu_New_record": "New record",
+  "Menu_Categories": "Categories",
+  "Record_page": "Record page",
+  "Login": "Login",
+  "New_record": "New record",
+  "Register": "Register"
+}
